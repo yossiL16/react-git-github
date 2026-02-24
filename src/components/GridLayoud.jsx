@@ -59,7 +59,7 @@ export default function GridLayoud() {
     function getDeadTime() {
         let deadline = new Date();
 
-        deadline.setSeconds(deadline.getSeconds() + 10);
+        deadline.setSeconds(deadline.getSeconds() + 100);
         return deadline;
     };
 
