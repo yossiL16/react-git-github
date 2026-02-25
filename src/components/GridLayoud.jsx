@@ -85,14 +85,6 @@ export default function GridLayoud() {
     }
 
     function minusCount(e) {
-        // if (e.target.id === "boom") {
-        //     setCount(count - 1)
-        // }
-        // if (count === 0 || timer === "00:00:00") {
-        //     setCurrent(false)
-        //     clearTimer("00:00:00")
-        //     setTimer("00:00:00")
-        // }
         setCount((prev) => {
             const nextCount = e.target.id === "boom" ? prev -1 : prev;
             if (nextCount === 0 || timer === "00:00:00") {
