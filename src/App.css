@@ -7,13 +7,17 @@ grid-row-gap: 5px;
 background-color: rgba(182, 194, 210);
 width: 80vw;
 height: 40vh;
-border: 5px solid  rgba(182, 194, 210);
+border: 10px solid  rgba(182, 194, 210);
+border-radius: 12px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cube {
   background-color: rgb(95, 94, 94);
   width: 100%;
   height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cube:hover {
@@ -27,6 +31,8 @@ border: 5px solid  rgba(182, 194, 210);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .b {
@@ -34,4 +40,6 @@ border: 5px solid  rgba(182, 194, 210);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
