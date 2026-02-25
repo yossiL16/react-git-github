@@ -48,7 +48,7 @@ export default function GridLayoud() {
     };
 
         function clearTimer (e) {
-        setTimer("00:01:40");
+        setTimer("00:00:59");
         if (Ref.current) clearInterval(Ref.current);
         const id = setInterval(() => {
             startTimer(e);
@@ -59,7 +59,7 @@ export default function GridLayoud() {
     function getDeadTime() {
         let deadline = new Date();
 
-        deadline.setSeconds(deadline.getSeconds() + 100);
+        deadline.setSeconds(deadline.getSeconds() + 50);
         return deadline;
     };
 
@@ -85,14 +85,23 @@ export default function GridLayoud() {
     }
 
     function minusCount(e) {
-        if (e.target.id === "boom") {
-            setCount(count - 1)
-        }
-        if (count === 0 || timer === "00:00:00") {
-            setCurrent(false)
-            clearTimer("00:00:00")
-            setTimer("00:00:00")
-        }
+        // if (e.target.id === "boom") {
+        //     setCount(count - 1)
+        // }
+        // if (count === 0 || timer === "00:00:00") {
+        //     setCurrent(false)
+        //     clearTimer("00:00:00")
+        //     setTimer("00:00:00")
+        // }
+        setCount((prev) => {
+            const nextCount = e.target.id === "boom" ? prev -1 : prev;
+            if (nextCount === 0 || timer === "00:00:00") {
+                setCurrent(false)
+                clearTimer("00:00:00")
+                setTimer("00:00:00")
+            }
+            return nextCount
+        })
     }
 
     function resetGame(){
@@ -106,7 +115,6 @@ export default function GridLayoud() {
     useEffect(() => {
         let x = gridCube()
         setListValue(x)
-        console.log("123");
         
     }, [flag])
 
