@@ -4,10 +4,10 @@ grid-template-columns: repeat(10, 1fr);
 grid-template-rows: repeat(11, 1fr);
 grid-column-gap: 5px;
 grid-row-gap: 5px;
-background-color: rgba(182, 194, 210);
+background-color: rgb(165, 170, 177);
 width: 80vw;
 height: 40vh;
-border: 10px solid  rgba(182, 194, 210);
+border: 10px solid  rgb(165, 170, 177);
 border-radius: 12px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
