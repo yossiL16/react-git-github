@@ -112,15 +112,13 @@ export default function GridLayoud() {
 
 
     return (
-        <>
-            <header>
-                <div>
-                    <h1>{count}</h1>
-                    <p>timer {timer}</p>
+        <div className='all-game'>
+                <div className='header'>
+                    <h2>Number of bombs remaining: <span>{count}</span></h2>
+                    <p>time left: {timer}</p>
 
                 </div>
 
-            </header>
             <div className="parent">
                 {listValue.map((item, index) => {
                     return (
@@ -129,7 +127,9 @@ export default function GridLayoud() {
                 })}
             </div>
             <br />
-            <button onClick={resetGame}>resert</button>
-        </>
+           <button onClick={resetGame}>resert</button>
+             {count === 0 && <p className='win'>You beat the game!!</p>}
+             {(timer === "00:00:00" && count > 0) && <p className='luz'>You lost the game!</p>}
+        </div>
     )
 }
