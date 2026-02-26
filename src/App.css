@@ -12,6 +12,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
   gap: 2em;
 }
 
@@ -22,8 +24,8 @@ grid-template-rows: repeat(11, 1fr);
 grid-column-gap: 5px;
 grid-row-gap: 5px;
 background-color: rgb(101, 106, 112);
-height: 60vh;
-width: 38rem;
+height: 60%;
+width: 80%;
 border: 10px solid  rgb(101, 106, 112);
 border-radius: 12px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -137,3 +139,5 @@ span {
   top: 400px;
   border-radius: 5px;
 }
+
+
