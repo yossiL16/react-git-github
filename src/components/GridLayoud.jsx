@@ -90,7 +90,7 @@ export default function GridLayoud() {
             if (nextCount === 0 || timer === "00:00:00") {
                 setCurrent(false)
                 clearTimer("00:00:00")
-                setTimer("00:00:00")
+                setTimer(timer)
             }
             return nextCount
         })
